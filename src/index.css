@@ -1,0 +1,38 @@
+/* src/index.css - Estilos Base Limpios */
+
+/* Importamos una fuente limpia y elegante, como Lora (con serifa, como de libro) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    /* Fuente con serifa para un toque de sabiduría y tradición */
+    font-family: 'Lora', serif;
+    background-color: #fcfcfc;
+    /* Fondo casi blanco */
+    color: #333;
+    /* Texto oscuro suave */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Reseteo básico para asegurar un aspecto uniforme */
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Opcional: Estilos para el scrollbar (limpio y minimalista) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d1d1d1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f7f7;
+}

@@ -1,0 +1,173 @@
+/* src/App.css - Diseño de Paz y Sabiduría */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-principal {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6a0572;
+  /* Color púrpura suave */
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.card-columna {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-columna h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #6a0572;
+}
+
+.card-columna.resultado {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  min-height: 400px;
+}
+
+.signo-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para el Ícono (Ahora un Emoji) */
+.signo-icono {
+  /* Hacemos el emoji muy grande */
+  font-size: 5rem;
+  line-height: 1;
+  margin: 1rem 0;
+  /* Color de acento para el icono */
+  color: #6a0572;
+}
+
+.signo-nombre-contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.signo-nombre {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6a0572;
+}
+
+.horoscopo-seccion {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 1.5rem;
+}
+
+.horoscopo-seccion h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.horoscopo-seccion p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.placeholder-text {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
