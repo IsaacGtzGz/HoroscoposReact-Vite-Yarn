@@ -4,6 +4,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // Asegura que las rutas de los assets se resuelvan correctamente
+  base: './',
   plugins: [
     react(),
     VitePWA({
@@ -11,11 +13,8 @@ export default defineConfig({
       devOptions: {
         enabled: true
       },
-
-      // 1. INCLUIR CARPETAS DE ASSETS
-      // Esto le dice a Vite que estas carpetas deben ser copiadas y consideradas.
-      // Asume que pegaste las carpetas 'android', 'ios', 'windows11' en tu carpeta 'public'.
-      includeAssets: ['/android', '/ios', '/windows11', '/windows11/*/*.png', '/android/*/*.png', '/ios/*/*.png'],
+      // Esto le dice a Vite que estas carpetas existen en 'public'
+      includeAssets: ['/android', '/ios', '/windows11'],
 
       manifest: {
         name: 'Horóscopo Sabiduría Astral',
@@ -24,9 +23,7 @@ export default defineConfig({
         theme_color: '#fcfcfc',
         display: "standalone",
 
-        // 2. CORREGIR RUTAS DE ÍCONOS
-        // Se agrega la diagonal '/' al inicio de cada ruta para que el navegador
-        // la busque correctamente desde la raíz del sitio (carpeta public).
+        // RUTAS CORREGIDAS: TODAS COMIENZAN CON DIAGONAL '/'
         "icons": [
           { "src": "/windows11/SmallTile.scale-100.png", "sizes": "71x71" },
           { "src": "/windows11/SmallTile.scale-125.png", "sizes": "89x89" },

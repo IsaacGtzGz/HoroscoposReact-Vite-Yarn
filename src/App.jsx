@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// Datos de los signos con información detallada
 const zodiacSigns = [
   { name: 'Aries', start: '03-21', end: '04-19', horoscope: { general: 'Hoy se le presentará una situación donde deberá buscar una solución inmediata a un conflicto. Trate de no involucrarse.', amor: 'Mantenga un diálogo activo con su alma gemela, dígale que la necesita mucho y desea compartir sus emociones.', riqueza: 'Deberá priorizar el plano económico en este día, ya que podría surgir algún inconveniente inesperado.', bienestar: 'Ese estado de confusión mental continuará en el día de hoy. Intente no asustarse ni desesperarse, todo pasará rápidamente.' } },
   { name: 'Tauro', start: '04-20', end: '05-20', horoscope: { general: 'La paciencia será su mejor aliada para enfrentar los desafíos de la jornada. Tómese su tiempo antes de actuar.', amor: 'Una conversación honesta fortalecerá su relación. Exprese sus sentimientos sin miedo a ser vulnerable.', riqueza: 'Momento de revisar sus finanzas. Es probable que descubra una oportunidad para aumentar sus ingresos.', bienestar: 'Conecte con la naturaleza. Un paseo al aire libre le ayudará a liberar el estrés acumulado.' } },
@@ -17,7 +16,6 @@ const zodiacSigns = [
   { name: 'Piscis', start: '02-19', end: '03-20', horoscope: { general: 'Tu intuición y sensibilidad están en su punto más alto. Escucha a tu corazón y no te dejes guiar por la razón.', amor: 'La empatía es tu mejor cualidad. Conecta con las emociones de tu pareja y demuéstrale tu apoyo incondicional.', riqueza: 'No es el momento para las inversiones. Si alguien te ofrece una oportunidad muy atractiva, desconfía.', bienestar: 'Dedica tiempo a tus sueños. Escucha lo que tu subconsciente te quiere decir, te revelará verdades que no puedes ver a simple vista.' } },
 ];
 
-// Íconos de Emojis para estabilidad
 const zodiacIcons = {
   'Aries': '♈',
   'Tauro': '♉',
@@ -32,7 +30,6 @@ const zodiacIcons = {
   'Acuario': '♒',
   'Piscis': '♓'
 };
-
 
 const getZodiacSign = (date) => {
   if (!date) return null;
@@ -81,10 +78,7 @@ function App() {
             {sign ? (
               <div className="fade-in">
                 <div className="signo-info">
-
-                  {/* Ícono de Emoji corregido */}
                   <p className="signo-icono">{zodiacIcons[sign.name]}</p>
-
                   <div className="signo-nombre-contenedor">
                     <h2>Horóscopo de {sign.name}</h2>
                     <span className="signo-nombre">{name || 'Usuario'}</span>

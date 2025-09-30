@@ -8,17 +8,13 @@
 }
 
 .ReloadPrompt-message {
-    /* Fondo suave, tonos de tierra o calma */
     background-color: #f7f3e9;
-    /* Crema/beige suave */
     border: 1px solid #c8b9a6;
-    /* Borde delicado */
     color: #333;
     padding: 1.2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: sans-serif;
-    /* Mantenemos sans-serif para las notificaciones */
 }
 
 .ReloadPrompt-message span {
@@ -45,7 +41,6 @@
 }
 
 .ReloadPrompt-buttons button:first-child {
-    /* Botón de Actualizar - Color de acento (púrpura suave) */
     background-color: #6a0572;
     color: #fff;
 }
@@ -55,7 +50,6 @@
 }
 
 .ReloadPrompt-buttons button:last-child {
-    /* Botón de Cerrar - Color neutro */
     background-color: #e0e0e0;
     color: #444;
 }
